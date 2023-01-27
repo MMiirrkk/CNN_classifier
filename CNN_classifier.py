@@ -17,6 +17,7 @@ def image_prepare(image: str, size: Tuple[int, int]) -> np.ndarray:
     :param size:
     :return:
     """
+
     image1 = cv2.imread(image)
     im_gray = cv2.cvtColor(image1, cv2.COLOR_BGR2GRAY)
     im_equal = cv2.equalizeHist(im_gray)
